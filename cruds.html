@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUD</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.debug.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.min.js"></script>
+  </head>
+  <body>
+    <div id="exportContent">
+      <div class="crud">
+        <!-- <div class="head">
+                 <h2>ceate your cv</h2>
+                 <p>create your cv page</p>
+             </div> 
+             -->
+        <div class="inputs">
+          <input placeholder="Enter your name" type="text" id="NAME" />
+
+          <div class="data">
+            <h5>OBJECTIVE</h5>
+            <input type="text" id="OBJECTIVE" />
+            <hr style="width: 100%" />
+            <h5>SKILLS&ABILITIES</h5>
+            <input type="text" id="SKILLS" />
+            <hr style="width: 100%" />
+            <h5>TOOLS</h5>
+            <input type="text" id="TOOLS" />
+            <hr style="width: 100%" />
+            <h5>PERSONAL EXPERIANCE</h5>
+            <input type="text" id="EXPERIANCE" />
+            <hr style="width: 100%" />
+            <h5>EDUCATION</h5>
+            <input type="text" id="EDUCATION" />
+            <hr style="width: 100%" />
+          </div>
+        </div>
+        <br />
+        <br />
+      </div>
+
+      <table id="mainContent">
+        <tr>
+          <th>NAME</th>
+          <th>OBJECTIVE</th>
+          <th>SKILLS</th>
+          <th>TOOLS</th>
+          <th>EXPERIANCE</th>
+          <th>EDUCATION</th>
+        </tr>
+        <tbody id="tbody"></tbody>
+      </table>
+      <br />
+    </div>
+    <!--save=add  get= -->
+    <div class="crudbutton">
+      <button id="SAVE">SAVE</button>
+      <br />
+      <br />
+    </div>
+
+    <button id="DOWNLOAD">DOWNLOAD</button>
+
+    <!-- here you will get data from datapro valiable and store it in html and i set
+    myword with display:none as i want to hide this section from the user and the data here will be in word file -->
+    <div id="myWord" style="display: none">
+      <ul>
+        <li></li>
+      </ul>
+    </div>
+    <script src="mains.js"></script>
+  </body>
+</html>
